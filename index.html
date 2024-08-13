@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arrays Tables</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div id="datetime"></div>
+
+  <h1>Register Students and Search Students</h1>
+
+  <div class="container">
+    <div class="form-container">
+      <form id="userForm">
+        <label for="name">Name: </label>
+        <input type="text" id="name" placeholder="Enter Your Name" /><br />
+        <label for="studentid">Student ID:</label>
+        <input type="number" id="studentid" placeholder="Enter Your Student ID" /><br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" placeholder="Enter Your Email" /><br />
+        <label for="number">Phone: </label>
+        <input type="number" id="phone" placeholder="Enter Your Number" /><br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter Your Age" /><br />
+        <label for="department">Department: </label>
+        <input type="text" id="department" placeholder="Enter your department" /><br />
+
+        <button id="btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <div class="search-container">
+      <label for="searchStudentId">Search by Student ID: </label>
+      <input type="number" id="searchStudentId" placeholder="Enter Student ID" /><br />
+      <button id="searchBtn" type="button">Search</button>
+      <div id="searchResult"></div>
+    </div>
+  </div>
+
+  <h1>Students Record</h1>
+  <div class="table" id="tableContainer">
+    <table id="userTable">
+      <tr>
+        <th><h2>Name</h2></th>
+        <th><h2>Student ID</h2></th>
+        <th><h2>Email</h2></th>
+        <th><h2>Phone</h2></th>
+        <th><h2>Age</h2></th>
+        <th><h2>Department</h2></th>
+        <th><h2>Reference No</h2></th>
+      </tr>
+    </table>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
